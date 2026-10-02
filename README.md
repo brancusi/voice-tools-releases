@@ -13,6 +13,15 @@ yourself (on-device transcription, your vocabulary, a model or two), then out at
 3. **Set up Voice Pipes** walks you through the rest: Microphone and Accessibility permissions, the on-device
    models (they download in the background), and optional API keys for cloud steps.
 
+**From a terminal**, or for an agent: the app, the `vp` command-line tool and the agent skill, with no prompts.
+
+```sh
+curl -fsSL https://github.com/brancusi/voice-tools-releases/releases/latest/download/install.sh | bash
+```
+
+It only installs a copy signed by Voice Pipes' developer and notarized by Apple. Add `-s -- --uninstall` to remove
+it (your config, history and keys stay), or `-s -- --help` for the options.
+
 After that it keeps itself up to date: when a new version is out, the menu bar panel offers **Install…**.
 
 ## What it does
